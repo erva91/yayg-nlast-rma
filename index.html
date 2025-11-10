@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pozitif Dil Dönüştürücü (Akıllı Sürüm)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h1 class="logo">Pozitif Dil Dönüştürücü</h1>
+    <a href="#" id="project-info">Proje Tanıtımı</a>
+  </nav>
+
+  <main>
+    <section class="input-area">
+      <h2>Cümlenizi Giriniz:</h2>
+      <textarea id="sentenceInput" placeholder="Örnek: Sen beni hiç sevmedin..."></textarea>
+      <button id="analyzeBtn">Analiz Et</button>
+    </section>
+
+    <section class="result-area hidden" id="resultArea">
+      <h3 id="sentimentResult"></h3>
+      <p id="suggestions"></p>
+    </section>
+
+    <section class="project-info hidden" id="infoSection">
+      <h2>Proje Tanıtımı</h2>
+      <p>
+        Bu web sitesi, girilen bir cümlenin duygusal tonunu (pozitif veya negatif)
+        analiz eder. Negatif ifadeleri tespit ettiğinde, aynı anlamı daha kibar ve
+        pozitif bir dille ifade eden öneriler sunar.
+      </p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
